@@ -1,6 +1,7 @@
 {
     "repositories": [
         {
+			"name": "bitwasp/bitcoin",
             "type": "git",
             "url":  "git@github.com:sanderkruger/bitcoin-php.git"
         }
