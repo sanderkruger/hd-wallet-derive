@@ -1,8 +1,14 @@
 {
+    "repositories": [
+        {
+            "type": "git",
+            "url":  "git@github.com:sanderkruger/bitcoin-php.git"
+        }
+    ],
     "name": "dan-da/hd-wallet-derive",
     "minimum-stability": "dev",
     "require": {
-        "bitwasp/bitcoin": "dev-master#8782bc6c470e342d4e0cb67eb036974f133b950b",
+        "bitwasp/bitcoin": "dev-master",
         "ext-json": "*",
         "php": ">=5.5",
         "dan-da/texttable-php": "1.0.3",
