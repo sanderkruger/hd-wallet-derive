@@ -99,7 +99,7 @@ class WalletDerive
         }
 
         MyLogger::getInstance()->log( "Deriving keys", MyLogger::info );
-        $path_base = is_numeric( $params['path'][0] ) ?  'm/' . $params['path'] : $params['path'];
+        $path_base = $params['path'];
         
         // Allow paths to end with i or i'.
         // i' specifies that addresses should be hardened.
@@ -111,7 +111,7 @@ class WalletDerive
                 $iter_part = $idx;
             }
         }
-        if(!$iter_part) {
+        if(!isset($iter_part)) {
             $iter_part = count($pparts);
             $pparts[] = 'x';
         }
